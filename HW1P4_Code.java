@@ -3,21 +3,21 @@ import java.util.Scanner;
 public class HW1P4_Code {
     public static void main(String[] args) throws Exception {
 
-        Scanner num1_input = new Scanner(System.in);
+        Scanner Num1_Input = new Scanner(System.in);
         System.out.println("Enter the first number: ");
-        int num1 = num1_input.nextInt();
+        int Num1 = Num1_Input.nextInt();
         
-        Scanner num2_input = new Scanner(System.in);
+        Scanner Num2_Input = new Scanner(System.in);
         System.out.println("Enter the second number: ");
-        int num2 = num2_input.nextInt();
+        int Num2 = Num2_Input.nextInt();
 
-        num1_input.close();
-        num2_input.close();
+        Num1_Input.close();
+        Num2_Input.close();
 
-        if (num1 > num2) {
-            System.out.println("The two numbers are: " + num1 + ", " + num2);
+        if (Num1 > Num2) {
+            System.out.println("The two numbers are: " + Num1 + ", " + Num2);
         } else {
-            System.out.println("The two numbers are: " + num2 + ", " + num1);
+            System.out.println("The two numbers are: " + Num2 + ", " + Num1);
         }
     }
 }
