@@ -5,11 +5,11 @@ public class HW1P2_Code {
 
         Scanner Radius_Input = new Scanner(System.in);
         System.out.println("Enter the radius of the circle: ");
-        double Radius = Radius_Input.nextDouble();
+        float Radius = Radius_Input.nextFloat();
 
         while (Radius <=0) {
             System.out.println("Please enter a positive number: ");
-            Radius = Radius_Input.nextDouble();
+            Radius = Radius_Input.nextFloat();
         }
 
         Radius_Input.close();
