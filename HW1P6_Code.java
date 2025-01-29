@@ -16,3 +16,5 @@ public class HW1P6_Code {
         }
     }
 }
+
+/* I am using VSCode, output below is the full terminal output */
