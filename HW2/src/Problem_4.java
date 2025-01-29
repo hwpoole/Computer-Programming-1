@@ -8,10 +8,10 @@ public class Problem_4 {
         float Base_Annual_Salary = Base_Annual_Salary_Input.nextFloat();
         Base_Annual_Salary_Input.close();
 
-        float Retroactive_Pay = ((Base_Annual_Salary / 2) * (float)1.076) - (Base_Annual_Salary / 2);
+        float Retroactive_Pay = ((Base_Annual_Salary / 2) * 1.076f) - (Base_Annual_Salary / 2);
         System.out.println("Retroactive Pay --> $" + Retroactive_Pay);
 
-        float Adjusted_Annual_Salary = Base_Annual_Salary * (float)1.076;
+        float Adjusted_Annual_Salary = Base_Annual_Salary * 1.076f;
         System.out.println("New Annual Salary --> $" + Adjusted_Annual_Salary);
 
         float Adjusted_Monthly_Salary = Adjusted_Annual_Salary / 12;
