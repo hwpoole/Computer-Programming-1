@@ -40,3 +40,19 @@ public class HW1P3_Code {
     }
 }
 
+/* I am using VSCode, output below is the full terminal output */
+
+/*
+hunterpoole@Megs-MacBook-Pro Documents %  /usr/bin/env /Library/Java/JavaVirtualMachines/t
+emurin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/hu
+nterpoole/Library/Application\ Support/Code/User/workspaceStorage/aa4af2d5ea8777f0c20fee4a
+a25f3c30/redhat.java/jdt_ws/Documents_5c3529dc/bin HW1P3_Code 
+
+Enter the number of seconds: 912418
+Days: 10
+Hours: 13
+Minutes: 26
+Seconds: 58
+
+hunterpoole@Megs-MacBook-Pro Documents % 
+*/

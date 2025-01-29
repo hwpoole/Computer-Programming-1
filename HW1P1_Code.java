@@ -46,3 +46,17 @@ public class HW1P1_Code {
 
     }
 }
+
+/* I am using VSCode, output below is the full terminal output */
+
+/*
+hunterpoole@Megs-MacBook-Pro Documents %  /usr/bin/env /Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptio
+nMessages -cp /Users/hunterpoole/Library/Application\ Support/Code/User/workspaceStorage/aa4af2d5ea8777f0c20fee4aa25f3c30/redhat.java/jdt_ws/Documents_5c3529
+dc/bin HW1P1_Code 
+
+Please provide your first angle: 50
+Please provide your second angle: 70
+The third angle is 60.0 degrees.
+
+hunterpoole@Megs-MacBook-Pro Documents %
+*/
