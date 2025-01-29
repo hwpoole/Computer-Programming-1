@@ -1,3 +1,12 @@
+/*
+Name: Hunter Poole
+Date: 1/29/25
+Homework #: 1
+Problem #: 2
+Source File: HW1P2_Code
+Action: Given the radius of a circle, calculates and then prints the volume and surface area of the sphere for that circle.
+*/
+
 import java.util.Scanner;
 
 public class HW1P2_Code {

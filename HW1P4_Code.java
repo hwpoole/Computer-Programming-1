@@ -1,3 +1,12 @@
+/*
+Name: Hunter Poole
+Date: 1/29/25
+Homework #: 1
+Problem #: 4
+Source File: HW1P4_Code
+Action: Given two numbers, returns them in order of the larger one first.
+*/
+
 import java.util.Scanner;
 
 public class HW1P4_Code {

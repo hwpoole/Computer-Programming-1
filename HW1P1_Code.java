@@ -1,3 +1,12 @@
+/*
+Name: Hunter Poole
+Date: 1/29/25
+Homework #: 1
+Problem #: 1
+Source File: HW1P1_Code
+Action: Takes user input for two angles of a triangle, and provides the third.
+*/
+
 import java.util.Scanner;
 
 public class HW1P1_Code {

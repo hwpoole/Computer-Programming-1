@@ -1,3 +1,12 @@
+/*
+Name: Hunter Poole
+Date: 1/29/25
+Homework #: 1
+Problem #: 3
+Source File: HW1P3_Code
+Action: Divides a given number of seconds into days, hours, minutes, and seconds
+*/
+
 import java.util.Scanner;
 
 public class HW1P3_Code {

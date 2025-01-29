@@ -1,3 +1,12 @@
+/*
+Name: Hunter Poole
+Date: 1/29/25
+Homework #: 1
+Problem #: 5
+Source File: HW1P5_Code
+Action: Given a number, determines if it is greater than or less than 100. Program stays active until user enters 0 to exit.
+*/
+
 import java.util.Scanner;
 
 public class HW1P5_Code {
