@@ -28,7 +28,6 @@ public class Problem_6 {
         }
         if (Provided_Number == 0){
             System.out.print("You have entered " + Even_Count + " even numbers.");
-            Number_Input.close();
         }
 
     }
