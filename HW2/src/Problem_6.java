@@ -20,7 +20,7 @@ public class Problem_6 {
         int Even_Count = 0;
 
         while (Provided_Number != 0) {
-            if (Provided_Number !=0 && Provided_Number % 2 == 0){
+            if (Provided_Number != 0 && Provided_Number % 2 == 0){
                 Even_Count++;
             }
             System.out.print("Next number. Enter 0 to exit: ");
