@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class Problem_6 {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         Scanner Number_Input = new Scanner(System.in);
         System.out.print("Please provide your numbers one at a time. Enter 0 to exit: ");
@@ -37,8 +37,7 @@ public class Problem_6 {
 /*
 PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>  & 'C:\Program Files\Java\jdk-23\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2\bin' 'Problem_6' 
 
-Please provide your numbers one at a time. Enter 0 to exit: 3
-Next number. Enter 0 to exit: 56
+Please provide your numbers one at a time. Enter 0 to exit: 56
 Next number. Enter 0 to exit: 4
 Next number. Enter 0 to exit: 13
 Next number. Enter 0 to exit: 779
@@ -48,17 +47,16 @@ You have entered 3 even numbers.
 
 PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> ^C
 PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> 
-PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>  c:; cd 'c:\Users\hunte\Documents\GitHub\155-W2-H2\HW2'; & 'C:\Program Files\Java\jdk-23\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2\bin' 'Problem_6'
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>  c:; cd 'c:\Users\hunte\Documents\GitHub\155-W2-H2\HW2'; & 'C:\Program Files\Java\jdk-23\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2\bin' 'Problem_6'        
 
-Please provide your numbers one at a time. Enter 0 to exit: 4
-Next number. Enter 0 to exit: 905775
+Please provide your numbers one at a time. Enter 0 to exit: 905775
 Next number. Enter 0 to exit: 13
 Next number. Enter 0 to exit: 777
 Next number. Enter 0 to exit: 346
 Next number. Enter 0 to exit: 42
 Next number. Enter 0 to exit: 12
 Next number. Enter 0 to exit: 0
-You have entered 4 even numbers.
+You have entered 3 even numbers.
 
 PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>
 */

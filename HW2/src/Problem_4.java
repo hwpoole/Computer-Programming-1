@@ -11,12 +11,11 @@ Action: Given a base salary, computes and outputs the retroactive pay increase f
 import java.util.Scanner; 
 
 public class Problem_4 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
         Scanner Base_Annual_Salary_Input = new Scanner(System.in);
         System.out.print("Please enter employee's salary --> ");
         float Base_Annual_Salary = Base_Annual_Salary_Input.nextFloat();
-        Base_Annual_Salary_Input.close();
 
         float Retroactive_Pay = ((Base_Annual_Salary / 2) * 1.076f) - (Base_Annual_Salary / 2);
         System.out.println("Retroactive Pay --> $" + Retroactive_Pay);
@@ -30,32 +29,30 @@ public class Problem_4 {
 }
 
 /*
-hunterpoole@Megs-MacBook-Pro HW2 %  cd /Users/hunterpoole/Documents/GitHub/155-W2-H2/HW2 ; /usr/bin/env /Library/Java/JavaVirtualMachines/te
-murin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/hunterpoole/Documents/GitHub/155-W2-H2/HW2/bin Proble
-m_4 
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>  & 'C:\Program Files\Java\jdk-23\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2\bin' 'Problem_4' 
 
 Please enter employee's salary --> 35000
 Retroactive Pay --> $1330.0
 New Annual Salary --> $37660.0
-
 New Monthly Salary --> $3138.3333
-hunterpoole@Megs-MacBook-Pro HW2 %  cd /Users/hunterpoole/Documents/GitHub/155-W2-H2/HW2 ; /usr/bin/env /Library/Java/JavaVirtualMachines/te
-murin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/hunterpoole/Documents/GitHub/155-W2-H2/HW2/bin Proble
-m_4 
+
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> ^C
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> 
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>  c:; cd 'c:\Users\hunte\Documents\GitHub\155-W2-H2\HW2'; & 'C:\Program Files\Java\jdk-23\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2\bin' 'Problem_4' 
 
 Please enter employee's salary --> 46500
 Retroactive Pay --> $1767.0
 New Annual Salary --> $50034.0
 New Monthly Salary --> $4169.5
 
-hunterpoole@Megs-MacBook-Pro HW2 %  cd /Users/hunterpoole/Documents/GitHub/155-W2-H2/HW2 ; /usr/bin/env /Library/Java/JavaVirtualMachines/te
-murin-21.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/hunterpoole/Documents/GitHub/155-W2-H2/HW2/bin Proble
-m_4 
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> ^C
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>  c:; cd 'c:\Users\hunte\Documents\GitHub\155-W2-H2\HW2'; & 'C:\Program Files\Java\jdk-23\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2\bin' 'Problem_4'        
 
 Please enter employee's salary --> 52450
 Retroactive Pay --> $1993.0996
 New Annual Salary --> $56436.2
 New Monthly Salary --> $4703.0166
 
-hunterpoole@Megs-MacBook-Pro HW2 % 
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> 
 */
