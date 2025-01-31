@@ -53,5 +53,23 @@ Retroactive Pay --> $1993.0996
 New Annual Salary --> $56436.2
 New Monthly Salary --> $4703.0166
 
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> ^C
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> 
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>  c:; cd 'c:\Users\hunte\Documents\GitHub\155-W2-H2\HW2'; & 'C:\Program Files\Java\jdk-23\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2\bin' 'Problem_4'
+
+Please enter employee's salary --> 78450
+Retroactive Pay --> $2981.0977
+New Annual Salary --> $84412.195
+New Monthly Salary --> $7034.3496
+
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> ^C
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>
+PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2>  c:; cd 'c:\Users\hunte\Documents\GitHub\155-W2-H2\HW2'; & 'C:\Program Files\Java\jdk-23\bin\java.exe' '--enable-preview' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2\bin' 'Problem_4'
+
+Please enter employee's salary --> 112000
+Retroactive Pay --> $4256.0
+New Annual Salary --> $120512.0
+New Monthly Salary --> $10042.667
+
 PS C:\Users\hunte\Documents\GitHub\155-W2-H2\HW2> 
 */
