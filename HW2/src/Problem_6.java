@@ -13,9 +13,9 @@ public class Problem_6 {
 
     public static void main(String[] args) {
 
-        Scanner Number_Input = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
         System.out.print("Please provide your numbers one at a time. Enter 0 to exit: ");
-        int Provided_Number = Number_Input.nextInt();
+        int Provided_Number = Input.nextInt();
 
         int Even_Count = 0;
 
@@ -24,7 +24,7 @@ public class Problem_6 {
                 Even_Count++;
             }
             System.out.print("Next number. Enter 0 to exit: ");
-            Provided_Number = Number_Input.nextInt();
+            Provided_Number = Input.nextInt();
         }
         if (Provided_Number == 0){
             System.out.print("You have entered " + Even_Count + " even numbers.");

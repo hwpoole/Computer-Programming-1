@@ -4,8 +4,7 @@ Date: 1/29/25
 Homework #: 2
 Problem #: 4
 Source File: Problem_4.java
-Action: Given a base salary, computes and outputs the retroactive pay increase for the previous six months,
-        the new annual salary, and the new monthly salary.
+Action: Given a base salary, computes and outputs the retroactive pay increase for the previous six months, the new annual salary, and the new monthly salary.
 */
 
 import java.util.Scanner; 
@@ -13,9 +12,9 @@ import java.util.Scanner;
 public class Problem_4 {
     public static void main(String[] args) {
 
-        Scanner Base_Annual_Salary_Input = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
         System.out.print("Please enter employee's salary --> ");
-        float Base_Annual_Salary = Base_Annual_Salary_Input.nextFloat();
+        float Base_Annual_Salary = Input.nextFloat();
 
         float Retroactive_Pay = ((Base_Annual_Salary / 2) * 1.076f) - (Base_Annual_Salary / 2);
         System.out.println("Retroactive Pay --> $" + Retroactive_Pay);

@@ -13,9 +13,9 @@ public class Problem_5 {
 
     public static void main(String[] args){
 
-        Scanner Year_Input = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
         System.out.print("Please enter a year: ");
-        int Year = Year_Input.nextInt();
+        int Year = Input.nextInt();
 
         if (Year % 400 == 0) {
             System.out.println(Year + " is a leap year.");
