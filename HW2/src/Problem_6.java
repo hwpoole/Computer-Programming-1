@@ -13,11 +13,11 @@ public class Problem_6 {
 
     public static void main(String[] args) {
 
+        int Even_Count = 0;
+
         Scanner Input = new Scanner(System.in);
         System.out.print("Please provide your numbers one at a time. Enter 0 to exit: ");
         int Provided_Number = Input.nextInt();
-
-        int Even_Count = 0;
 
         while (Provided_Number != 0) {
             if (Provided_Number != 0 && Provided_Number % 2 == 0){
