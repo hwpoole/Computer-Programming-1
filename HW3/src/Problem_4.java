@@ -18,20 +18,20 @@ public class Problem_4 {
 
         if (Income <= 15000)
         {
-            System.out.println("Net Income = $" + Income);
-            System.out.println("State Tax = $0");
+            System.out.printf("%s%.2f %n %s%.2f %n", "Net Income = $",
+                                Income, "State Tax = $", 0);
         }
         
         if (Income >= 15001 && Income <= 30000)
         {
-            System.out.println("Net Income = $" + Income);
-            System.out.println("State Tax = $" + Tax5p);
+            System.out.printf("%s%.2f %n %s%.2f %n", "Net Income = $",
+                                Income, "State Tax = $", Tax5p);
         }
 
         if (Income >= 30001)
         {
-            System.out.println("Net Income = $" + Income);
-            System.out.println("State Tax = $" + (MaxTax5p + Tax10p));
+            System.out.printf("%s%.2f %n %s%.2f %n", "Net Income = $",
+                                Income, "State Tax = $", (MaxTax5p + Tax10p));
         }
     }
 }
