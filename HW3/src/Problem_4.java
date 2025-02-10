@@ -1,3 +1,17 @@
+/*
+Name: Hunter Poole
+Date: 02/10/2025
+Homework # : 3
+Source File: Problem_4
+Action: Given an income, assess state taxes on the following brackets:
+            0% for $0 - 15000
+            5% for $15001 - 30000
+            10% for $30000 +
+        Return the following:
+        Net Income = [Income]
+        State Tax = [Taxes]
+ */
+
 
 import java.util.Scanner;
 
@@ -35,3 +49,23 @@ public class Problem_4 {
         }
     }
 }
+
+/*
+Please enter the person's net income --> 24500
+Net Income = $24500.00 
+State Tax = $475.00 
+
+Please enter the person's net income --> 40000
+Net Income = $40000.00 
+State Tax = $1750.00 
+
+Please enter the person's net income --> 28275
+Net Income = $28275.00 
+State Tax = $663.75 
+
+Please enter the person's net income --> 12500
+Net Income = $12500.00 
+State Tax = $0.00 
+
+hunterpoole@megs-mbp Documents % 
+ */
