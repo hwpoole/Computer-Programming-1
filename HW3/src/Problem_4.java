@@ -13,7 +13,7 @@ public class Problem_4 {
         IncomeAbove15 = Income - 15000f;
         IncomeAbove30 = Income - 30000f;
         Tax5p = IncomeAbove15 * 0.05f;
-        MaxTax5p = 749.95f;
+        MaxTax5p = 750f;
         Tax10p = IncomeAbove30 * 0.10f;
 
         if (Income <= 15000)
