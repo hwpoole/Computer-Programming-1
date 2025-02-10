@@ -9,11 +9,11 @@ public class Problem_5 {
         System.out.print("Provide your number: ");
         int Num = Input.nextInt();
 
-        for (int MultiplesOfThree = Num; MultiplesOfThree >= 3; MultiplesOfThree--)
+        for (int Multiples = Num; Multiples >= 3; Multiples--)
         {
-            if ((MultiplesOfThree % 3) == 0)
+            if ((Multiples % 3) == 0)
             {
-                System.out.print(MultiplesOfThree + " ");
+                System.out.print(Multiples + " ");
             }
         }
         System.out.println();
