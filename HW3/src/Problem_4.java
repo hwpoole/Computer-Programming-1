@@ -10,8 +10,8 @@ public class Problem_4 {
         System.out.print("Please enter the person's net income --> ");
         Income = Input.nextFloat();
 
-        IncomeAbove15 = Income - 15001f;
-        IncomeAbove30 = Income - 30001f;
+        IncomeAbove15 = Income - 15000f;
+        IncomeAbove30 = Income - 30000f;
         Tax5p = IncomeAbove15 * 0.05f;
         MaxTax5p = 749.95f;
         Tax10p = IncomeAbove30 * 0.10f;
