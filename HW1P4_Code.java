@@ -12,17 +12,13 @@ import java.util.Scanner;
 public class HW1P4_Code {
     public static void main(String[] args)
     {
-
-        Scanner Num1_Input = new Scanner(System.in);
+        Scanner Input1 = new Scanner(System.in);
         System.out.print("Enter the first number: ");
-        int Num1 = Num1_Input.nextInt();
+        int Num1 = Input1.nextInt();
         
-        Scanner Num2_Input = new Scanner(System.in);
+        Scanner Input2 = new Scanner(System.in);
         System.out.print("Enter the second number: ");
-        int Num2 = Num2_Input.nextInt();
-
-        Num1_Input.close();
-        Num2_Input.close();
+        int Num2 = Input2.nextInt();
 
         if (Num1 > Num2)
         {
