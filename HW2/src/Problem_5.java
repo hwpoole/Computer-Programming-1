@@ -3,17 +3,15 @@ Name: Hunter Poole
 Date: 1/29/25
 Homework #: 2
 Problem #: 5
-Source File: Problem_5.java
+Source File: Problem_5
 Action: Given a year, determines if it is a leap year or not. Prints result.
 */
 
 import java.util.Scanner;
 
 public class Problem_5 {
-
     public static void main(String[] args)
     {
-
         Scanner Input = new Scanner(System.in);
         System.out.print("Please enter a year: ");
         int Year = Input.nextInt();
