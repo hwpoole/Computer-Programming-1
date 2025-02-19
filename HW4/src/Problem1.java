@@ -13,7 +13,7 @@ public class Problem1 {
     public static void main(String[] args)
     {
         final float A = 4.0f, B = 3.0f, C = 2.0f, D = 1.0f, F = 0.0f;
-        float Grade1_Float = 0.0f, Grade2_Float = 0.0f, GPA = 0.0f;
+        float Grade1_Float = F, Grade2_Float = F, GPA = 0.0f;
         String Grade1_String = "F", Grade2_String = "F";
         int Credits1 = 0, Credits2 = 0;
 
