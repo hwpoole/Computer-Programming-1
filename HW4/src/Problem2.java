@@ -48,7 +48,7 @@ public class Problem2 {
 
         if (BAC == 0)
         {
-            System.out.printf("%s %.3f, %s", "BAC =", 0.000, "You are just fine");
+            System.out.printf("%s %.3f, %s", "BAC =", BAC, "You are just fine");
         }
 
         if (BAC > 0 && BAC <= 0.05)
@@ -74,8 +74,7 @@ public class Problem2 {
         if (BAC > 0.399)
         {
             System.out.printf("%s %.3f, %s", "BAC =", BAC, "Onset of coma, possible death due to respiratory arrest.");
-        }
-        
+        }        
     }
 }
 
