@@ -14,7 +14,7 @@ public class Problem2 {
     public static void main(String[] args)
     {
         final float MALE = 0.68f, FEMALE = 0.55f;
-        float NumDrinks = 0, HoursDrinking = 0, WeightPounds = 0, BAC = 0, WeightGrams = 0, GramsAlcohol = 0, MetabolicRate = 0;
+        float NumDrinks = 0, HoursDrinking = 0, WeightPounds = 0, WeightGrams = 0, GramsAlcohol = 0, MetabolicRate = 0, BAC = 0;
         String Gender = "";
 
         Scanner Input1 = new Scanner(System.in);
@@ -33,38 +33,17 @@ public class Problem2 {
         System.out.print("How many hours have you been drinking? ");
         HoursDrinking = Input4.nextFloat();
 
-        
+        MetabolicRate = HoursDrinking * 0.015f;
         GramsAlcohol = (NumDrinks * 14f);
-        System.out.println("Grams " + GramsAlcohol);
-
         WeightGrams = (WeightPounds * 454f);
-        System.out.println("Weight " + WeightGrams);
 
-        float FirstDivision = GramsAlcohol / WeightGrams;
-        System.out.println("Division " + FirstDivision);
-
-        float MaleMultiply = FirstDivision * MALE;
-        System.out.println("Male " + MaleMultiply);
-
-        float X100 = MaleMultiply * 100;
-        System.out.println("x100 " + X100);
-
-        float Minus = MetabolicRate * HoursDrinking;
-        System.out.println("Minus " + Minus);
-
-        float Result = MaleMultiply - Minus;
-        System.out.println("Result " + Result);
-
-        BAC = ((GramsAlcohol) / (WeightGrams * MALE) * 100) - (MetabolicRate * HoursDrinking);
-        System.out.println(BAC);
-
-        /*if (Gender == "Male" || Gender == "M")
+        if (Gender.equals("Male") || Gender.equals("M"))
         {
-            BAC = (((NumDrinks * 14) / ((Weight * 454) * MALE)) * 100) - (HoursDrinking * MetabolicRate);
+            BAC = ((GramsAlcohol) / (WeightGrams * MALE) * 100) - (MetabolicRate);
         }
-        else
+        if (Gender.equals("Female") || Gender.equals("F"))
         {
-            BAC = (((NumDrinks * 14) / ((Weight * 454) * FEMALE)) * 100) - (HoursDrinking * MetabolicRate);
+            BAC = ((GramsAlcohol) / (WeightGrams * FEMALE) * 100) - (MetabolicRate);
         }
 
         if (BAC == 0)
@@ -96,10 +75,52 @@ public class Problem2 {
         {
             System.out.printf("%s %.3f, %s", "BAC =", BAC, "Onset of coma, possible death due to respiratory arrest.");
         }
-            */
+        
     }
 }
 
 /*
- * 
+Male or Female? M
+What is your body weight in pounds? 180
+How many drinks have you had? 4
+How many hours have you been drinking? 2
+BAC = 0.071, Slurring speech, loss of balance
+
+Male or Female? M
+What is your body weight in pounds? 165
+How many drinks have you had? 2
+How many hours have you been drinking? 3
+BAC = 0.010, Feeling good
+
+Male or Female? F
+What is your body weight in pounds? 120
+How many drinks have you had? 8
+How many hours have you been drinking? 2
+BAC = 0.344, Alcohol poisoning. Loss of consciousness
+
+Male or Female? M
+What is your body weight in pounds? 210
+How many drinks have you had? 6
+How many hours have you been drinking? 3
+BAC = 0.085, Slurring speech, loss of balance
+
+// Additional test cases //
+
+Male or Female? M
+What is your body weight in pounds? 172
+How many drinks have you had? 10
+How many hours have you been drinking? 2
+BAC = 0.234, Needs assistance in walking; total mental confusion
+
+Male or Female? F
+What is your body weight in pounds? 135
+How many drinks have you had? 15
+How many hours have you been drinking? 1
+BAC = 0.608, Onset of coma, possible death due to respiratory arrest.
+
+Male or Female? F
+What is your body weight in pounds? 94
+How many drinks have you had? 0
+How many hours have you been drinking? 0
+BAC = 0.000, You are just fine
  */
