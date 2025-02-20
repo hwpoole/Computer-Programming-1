@@ -34,8 +34,8 @@ public class Problem2 {
         HoursDrinking = Input4.nextFloat();
 
         MetabolicRate = HoursDrinking * 0.015f;
-        GramsAlcohol = (NumDrinks * 14f);
-        WeightGrams = (WeightPounds * 454f);
+        GramsAlcohol = NumDrinks * 14f;
+        WeightGrams = WeightPounds * 454f;
 
         if (Gender.equals("Male") || Gender.equals("M"))
         {
