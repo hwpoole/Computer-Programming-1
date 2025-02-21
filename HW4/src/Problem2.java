@@ -14,7 +14,7 @@ public class Problem2 {
     public static void main(String[] args)
     {
         final float MALE = 0.68f, FEMALE = 0.55f;
-        float NumDrinks = 0, HoursDrinking = 0, WeightPounds = 0, WeightGrams = 0, GramsAlcohol = 0, MetabolicRate = 0, BAC = 0;
+        float NumDrinks, HoursDrinking, WeightPounds, WeightGrams, GramsAlcohol, MetabolicRate, BAC = 0;
         String Gender = "";
 
         Scanner Input = new Scanner(System.in);

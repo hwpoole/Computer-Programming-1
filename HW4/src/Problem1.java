@@ -13,13 +13,13 @@ public class Problem1 {
     public static void main(String[] args)
     {
         final float A = 4.0f, B = 3.0f, C = 2.0f, D = 1.0f, F = 0.0f;
-        float Grade1_Float = F, Grade2_Float = F, GPA = 0.0f;
-        String Grade1_String = "F", Grade2_String = "F";
-        int Credits1 = 0, Credits2 = 0;
+        float Grade1_Float = F, Grade2_Float = F, GPA;
+        char Grade1_Ch, Grade2_Ch;
+        int Credits1, Credits2;
 
         Scanner Input = new Scanner(System.in);
         System.out.print("Enter letter grade for first class --> ");
-        Grade1_String = Input.next();
+        Grade1_Ch = Input.next().charAt(0);
 
         System.out.print("Enter number of credit hours for first class --> ");
         Credits1 = Input.nextInt();
@@ -27,55 +27,55 @@ public class Problem1 {
         System.out.println();
 
         System.out.print("Enter letter grade for second class --> ");
-        Grade2_String = Input.next();
+        Grade2_Ch = Input.next().charAt(0);
 
         System.out.print("Enter number of credit hours for second class --> ");
         Credits2 = Input.nextInt();
 
         System.out.println();
 
-        switch (Grade1_String)
+        switch (Grade1_Ch)
         {
-            case "A":
+            case 'A':
                 Grade1_Float = A;
                 break;
-            case "B":
+            case 'B':
                 Grade1_Float = B;
                 break;
-            case "C":
+            case 'C':
                 Grade1_Float = C;
                 break;
-            case "D":
+            case 'D':
                 Grade1_Float = D;
                 break;
-            case "F":
+            case 'F':
                 Grade1_Float = F;
                 break;
         }
 
-        switch (Grade2_String)
+        switch (Grade2_Ch)
         {
-            case "A":
+            case 'A':
                 Grade2_Float = A;
                 break;
-            case "B":
+            case 'B':
                 Grade2_Float = B;
                 break;
-            case "C":
+            case 'C':
                 Grade2_Float = C;
                 break;
-            case "D":
+            case 'D':
                 Grade2_Float = D;
                 break;
-            case "F":
+            case 'F':
                 Grade2_Float = F;
                 break;
         }
 
         GPA = ((Grade1_Float * Credits1) + (Grade2_Float * Credits2)) / (Credits1 + Credits2);
 
-        System.out.printf("%s %3d %n", Grade1_String, Credits1);
-        System.out.printf("%s %3d %n", Grade2_String, Credits2);
+        System.out.printf("%s %3d %n", Grade1_Ch, Credits1);
+        System.out.printf("%s %3d %n", Grade2_Ch, Credits2);
         System.out.printf("%s %.5f %n", "Your GPA = ", GPA);
 
         if (GPA >= 3.5)
