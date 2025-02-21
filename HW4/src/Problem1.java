@@ -1,6 +1,6 @@
 /*
 Name: Hunter Poole
-Date: 2/18/25
+Date: 2/20/25
 HW #: 4
 Problem #: 1
 Source Code: Problem1.java
@@ -124,6 +124,7 @@ Your GPA =  1.50000
 You are doing poorly
 
     // Additional cases //
+    // Test for F, not included above //
 
 Enter letter grade for first class --> A
 Enter number of credit hours for first class --> 5

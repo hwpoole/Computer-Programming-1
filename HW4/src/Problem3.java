@@ -76,6 +76,7 @@ Enter a number 7
 Today is Saturday
 
     // Additional cases //
+    // For error and exit //
 
 Enter a number 0
 Error: Please enter a number 1 - 7

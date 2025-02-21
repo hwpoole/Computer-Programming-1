@@ -1,6 +1,6 @@
 /*
 Name: Hunter Poole
-Date: 2/19/25
+Date: 2/20/25
 HW #: 4
 Problem #: 2
 Source Code: Problem2.java
@@ -76,7 +76,7 @@ public class Problem2 {
 }
 
 /* P.S., I'm not a big fan of these stacked if statements for each BAC bucket.
-   Is there a better way to do this? Didn't work w/switch statement when I tried it.
+   Is there a better (simpler) way to do this? Didn't work w/switch statement when I tried it.
 */
 
 /*
@@ -105,6 +105,7 @@ How many hours have you been drinking? 3
 BAC = 0.085, Slurring speech, loss of balance
 
     // Additional cases //
+    // To cover all status messages //
 
 Male or Female? M
 What is your body weight in pounds? 172
