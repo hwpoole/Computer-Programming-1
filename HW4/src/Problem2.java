@@ -17,21 +17,18 @@ public class Problem2 {
         float NumDrinks = 0, HoursDrinking = 0, WeightPounds = 0, WeightGrams = 0, GramsAlcohol = 0, MetabolicRate = 0, BAC = 0;
         String Gender = "";
 
-        Scanner Input1 = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
         System.out.print("Male or Female? ");
-        Gender = Input1.next();
+        Gender = Input.next();
 
-        Scanner Input2 = new Scanner(System.in);
         System.out.print("What is your body weight in pounds? ");
-        WeightPounds = Input2.nextFloat();
+        WeightPounds = Input.nextFloat();
 
-        Scanner Input3 = new Scanner(System.in);
         System.out.print("How many drinks have you had? ");
-        NumDrinks = Input3.nextFloat();
+        NumDrinks = Input.nextFloat();
 
-        Scanner Input4 = new Scanner(System.in);
         System.out.print("How many hours have you been drinking? ");
-        HoursDrinking = Input4.nextFloat();
+        HoursDrinking = Input.nextFloat();
 
         MetabolicRate = HoursDrinking * 0.015f;
         GramsAlcohol = NumDrinks * 14f;
@@ -78,6 +75,10 @@ public class Problem2 {
     }
 }
 
+/* P.S., I'm not a big fan of these stacked if statements for each BAC bucket.
+   Is there a better way to do this? Didn't work w/switch statement when I tried it.
+*/
+
 /*
 Male or Female? M
 What is your body weight in pounds? 180
@@ -103,7 +104,7 @@ How many drinks have you had? 6
 How many hours have you been drinking? 3
 BAC = 0.085, Slurring speech, loss of balance
 
-// Additional test cases //
+    // Additional cases //
 
 Male or Female? M
 What is your body weight in pounds? 172

@@ -17,22 +17,21 @@ public class Problem1 {
         String Grade1_String = "F", Grade2_String = "F";
         int Credits1 = 0, Credits2 = 0;
 
-        Scanner Input1 = new Scanner(System.in);
+        Scanner Input = new Scanner(System.in);
         System.out.print("Enter letter grade for first class --> ");
-        Grade1_String = Input1.next();
+        Grade1_String = Input.next();
 
-        Scanner Input2 = new Scanner(System.in);
         System.out.print("Enter number of credit hours for first class --> ");
-        Credits1 = Input2.nextInt();
+        Credits1 = Input.nextInt();
+
         System.out.println();
 
-        Scanner Input3 = new Scanner(System.in);
         System.out.print("Enter letter grade for second class --> ");
-        Grade2_String = Input3.next();
+        Grade2_String = Input.next();
 
-        Scanner Input4 = new Scanner(System.in);
         System.out.print("Enter number of credit hours for second class --> ");
-        Credits2 = Input4.nextInt();
+        Credits2 = Input.nextInt();
+
         System.out.println();
 
         switch (Grade1_String)
@@ -123,6 +122,8 @@ D   3
 C   3
 Your GPA =  1.50000
 You are doing poorly
+
+    // Additional cases //
 
 Enter letter grade for first class --> A
 Enter number of credit hours for first class --> 5
