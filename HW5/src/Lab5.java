@@ -7,7 +7,7 @@ Action: Determines if a number is positive, negative or zero.
         Stores # of positives, negatives, and zeros. Displays
         count on exit.
         Only takes Y || y for start/continue. N || n for quit.
- */
+*/
 
 import java.util.Scanner;
 

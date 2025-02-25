@@ -9,7 +9,7 @@ Action: Takes a single char, returns char, ASCII value,
         Counts # of uppercase, lowercase, digits, and
         other characters entered. '#' to exit.
         Displays a table for counts of char types at exit.
- */
+*/
 
 import java.util.Scanner;
 
@@ -30,8 +30,8 @@ public class Problem1
             
             if (Ch != '#')
             {
-            System.out.printf("%n%s %c %n%s %c %s %d %n","You entered", Ch, "The ASCII value of",
-            Ch, "is", Ch_Value);
+            System.out.printf("%n%s %c %n%s %c %s %d %n","You entered", Ch,
+                                "The ASCII value of", Ch, "is", Ch_Value);
 
             NextCh = Ch;
             NextCh2 = ++NextCh;
@@ -59,9 +59,10 @@ public class Problem1
             
         }while (Ch != '#');
 
-        System.out.printf("%n%s %d %n%s %d %n%s %d %n%s %d", "Number of uppercase--------->", Uppercase,
-                            "Number of lowercase--------->", Lowercase, "Number of numbers----------->", Digit,
-                            "Number of other characters-->", Other);
+        System.out.printf("%n%s %d %n%s %d %n%s %d %n%s %d", "Number of uppercase--------->",
+                        Uppercase,"Number of lowercase--------->", Lowercase,
+                        "Number of numbers----------->", Digit,
+                        "Number of other characters-->", Other);
     }
 }
 

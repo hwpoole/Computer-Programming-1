@@ -3,7 +3,7 @@ Name: Hunter Poole
 Date: 2/24/25
 HW #: 5
 Problem #: 4
-Source Code: Problem4
+Source Code: Problem4.java
 Action: Given a whole number, displays multiples of 3 down to 3.
 */
 
