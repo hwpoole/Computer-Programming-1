@@ -21,6 +21,7 @@ public class Problem2
         {
             Num3 = Num1 + Num2;
             System.out.printf("%-10d",Num3);
+            
             Num1 = Num2;
             Num2 = Num3;
 
