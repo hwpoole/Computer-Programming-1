@@ -16,6 +16,7 @@ public class Problem2
         int i, Num1 = 0, Num2 = 1, Num3;
 
         System.out.printf("%-10d%-10d", Num1, Num2);
+        
         for (i = 39; i > 0; i--)
         {
             Num3 = Num1 + Num2;
