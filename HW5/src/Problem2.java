@@ -16,7 +16,7 @@ public class Problem2
         int i, Num1 = 0, Num2 = 1, Num3;
 
         System.out.printf("%-10d%-10d", Num1, Num2);
-        
+
         for (i = 39; i > 0; i--)
         {
             Num3 = Num1 + Num2;
@@ -48,6 +48,7 @@ Chose to count Fibonacci number 0 as 0, 1 as 1, 2 as 1, 3 as 2, etc
 per https://planetmath.org/listoffibonaccinumbers
 So, 102334155 is the 40th Fibonacci number with 0 and 1 counting as 0 and 1.
 
-If wrong, update i = 39 --> i = 40
+If wrong, update i = 39 --> i = 40, change if statement:
+    if (i % 6 == 1)
 Will print 165580141 (#41) as the last number, satisfying 6 num per row requirement.
 */
