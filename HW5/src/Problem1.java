@@ -35,6 +35,7 @@ public class Problem1
 
             NextCh = Ch;
             NextCh2 = ++NextCh;
+            
             System.out.printf("%s %c %s %c %n%n", "The next two characters are:", NextCh++,
                             "and", ++NextCh2);
             }
