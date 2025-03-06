@@ -63,4 +63,11 @@ Enter second number 3
 Sum while loop is 0
 Sum do loop is    7
 Sum for loop is   0
+
+Enter first number 7
+Enter second number 14
+
+Sum while loop is 84
+Sum do loop is    84
+Sum for loop is   84
  */
