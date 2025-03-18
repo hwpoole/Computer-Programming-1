@@ -3,7 +3,9 @@ Name: Hunter Poole
 Date: 3/17/25
 Lab #: 7
 Source Code: Lab7.java
-Action: 
+Action: Takes two integers, and subtracts the second from the first.
+        Displays result and a large positive or negative sign.
+        Loops until integer1 = integer2.
 */
 
 import java.util.Scanner;
@@ -12,27 +14,29 @@ public class Lab7
 {
 
 /*
-Action:
-Parameters:
-Returns:
-Precondition:
+Action: Displays a big positive sign made of asterisks
+Parameters: None
+Returns: void
+Precondition: None
 */
 
     static void BigPositive()
     {
-        System.out.printf("%n%n%5c%n%5c%n%c%c%c%c%c%c%c%c%c %n%5c %n%5c %n%n", '*','*','*','*','*','*','*','*','*','*','*','*','*');
+        System.out.printf("%n%5c%n%5c%n%c%c%c%c%c%c%c%c%c %n%5c %n%5c %n%n", 
+                        '*','*','*','*','*','*','*','*','*','*','*','*','*');
     }
 
 /*
-Action:
-Parameters:
-Returns:
-Precondition:
+Action: Displays a big negative sign made of asterisks
+Parameters: None
+Returns: void
+Precondition: None
 */
 
     static void BigNegative()
     {
-        System.out.printf("%n%n%c%c%c%c%c%c%c%c%c%c%c%n%n",'*','*','*','*','*','*','*','*','*','*','*','*');
+        System.out.printf("%n%c%c%c%c%c%c%c%c%c%c%c%n%n",
+                    '*','*','*','*','*','*','*','*','*','*','*','*');
     }
 
     public static void main (String[] args)
@@ -50,14 +54,17 @@ Precondition:
 
             Difference = Num1 - Num2;
 
-            System.out.printf("%n%s %d %n%s","The answer is:", Difference,
+            if (Difference != 0)
+            {
+            System.out.printf("%n%s %d %n%s%n","The answer is:", Difference,
                                 "And expression is: ");
+            }
 
             if (Difference > 0)
             {
                 BigPositive();
             }
-            else
+            else if (Difference < 0)
             {
                 BigNegative();
             }
@@ -67,5 +74,34 @@ Precondition:
 }
 
 /*
- * 
+Please enter two integers to subtract , same two to quit --> 5 3
+
+The answer is: 2 
+And expression is: 
+
+    *
+    *
+********* 
+    * 
+    * 
+
+Please enter two integers to subtract , same two to quit --> 3 5
+
+The answer is: -2 
+And expression is: 
+
+***********
+
+Please enter two integers to subtract , same two to quit --> 17 4
+
+The answer is: 13 
+And expression is: 
+
+    *
+    *
+********* 
+    * 
+    * 
+
+Please enter two integers to subtract , same two to quit -->  28 28
  */
