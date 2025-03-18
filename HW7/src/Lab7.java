@@ -18,9 +18,9 @@ Returns:
 Precondition:
 */
 
-    static void Plus(int N)
+    static void BigPositive()
     {
-
+        System.out.printf("%n%n%5c%n%5c%n%c%c%c%c%c%c%c%c%c %n%5c %n%5c %n%n", '*','*','*','*','*','*','*','*','*','*','*','*','*');
     }
 
 /*
@@ -30,26 +30,39 @@ Returns:
 Precondition:
 */
 
-    static void Minus(int N)
+    static void BigNegative()
     {
-
+        System.out.printf("%n%n%c%c%c%c%c%c%c%c%c%c%c%n%n",'*','*','*','*','*','*','*','*','*','*','*','*');
     }
 
     public static void main (String[] args)
     {
-        int Num1, Num2;
+        int Num1, Num2, Difference;
 
         Scanner Input = new  Scanner(System.in);
 
         do
         {
-            System.out.print("Enter your first integer --> ");
+            System.out.print("Please enter two integers to subtract" +
+                                 " , same two to quit --> ");
             Num1 = Input.nextInt();
-
-            System.out.print("Enter your second integer --> ");
             Num2 = Input.nextInt();
 
-        } while (Num1 != Num2)
+            Difference = Num1 - Num2;
+
+            System.out.printf("%n%s %d %n%s","The answer is:", Difference,
+                                "And expression is: ");
+
+            if (Difference > 0)
+            {
+                BigPositive();
+            }
+            else
+            {
+                BigNegative();
+            }
+
+        } while (Num1 != Num2);
     }
 }
 
