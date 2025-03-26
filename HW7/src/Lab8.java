@@ -1,6 +1,6 @@
 /*
 Name: Hunter Poole
-Date: 3/17/25
+Date: 3/26/25
 Lab #: 8
 Source Code: Lab8.java
 Action: Asks for a sentence, then passes that sentence to a function.
