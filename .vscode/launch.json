@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Lab9",
+            "request": "launch",
+            "mainClass": "Lab9",
+            "projectName": "155-W10-HW8_6006b2dd"
+        },
+        {
+            "type": "java",
             "name": "Problem1",
             "request": "launch",
             "mainClass": "Problem1",
