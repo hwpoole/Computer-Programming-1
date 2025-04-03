@@ -3,7 +3,9 @@ Name: Hunter Poole
 Date: 4/2/25
 Lab #: 9
 Source Code: Lab9.java
-Action: 
+Action: Collects 3 numbers. Passes those three to a function
+        that determines which one is the largest. Prints which
+        one is the largest.
 */
 
 import java.util.Scanner;
@@ -38,6 +40,7 @@ Precondition: Requires three integers of unequal size.
 
         do
         {
+            
             Scanner Input = new Scanner(System.in);
             System.out.print("Please enter integer 1: ");
             FirstInt = Input.nextInt();
@@ -50,14 +53,37 @@ Precondition: Requires three integers of unequal size.
 
             Largest = FindLargestOfThree(FirstInt, SecondInt, ThirdInt);
 
-            System.out.println(Largest + " is the largest of the three");
+            System.out.printf("%d %s%n%n", Largest, "is the largest of the three");
             System.out.print("Continue? Y or N: ");
             Continue = Input.next().charAt(0);
 
-        } while (Continue != 'N' || Continue != 'n');
+        } while (Continue != 'N' && Continue != 'n');
     }
 }
 
 /*
- * 
+Please enter integer 1: 5
+Please enter integer 2: 4
+Please enter integer 3: 1
+5 is the largest of the three
+
+Continue? Y or N: Y
+Please enter integer 1: 18
+Please enter integer 2: 44
+Please enter integer 3: 27
+44 is the largest of the three
+
+Continue? Y or N: Y
+Please enter integer 1: 101
+Please enter integer 2: 100
+Please enter integer 3: 102 
+102 is the largest of the three
+
+Continue? Y or N: Y
+Please enter integer 1: 100
+Please enter integer 2: 100
+Please enter integer 3: 100
+100 is the largest of the three
+
+Continue? Y or N: N
  */
