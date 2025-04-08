@@ -1,10 +1,14 @@
 /*
 Name: Hunter Poole
-Date:
-HW #:
-Problem #:
-Source Code:
-Action:
+Date: 4/7/25
+HW #: 9
+Problem #: 1
+Source Code: Problem1.java
+Action: Converts a string to an int using a function.
+        Does not use any built in parsing or conversion routines.
+        Function returns error codes to main, main tests the codes.
+        Main displays errors or the converted integer.
+        Loops until 'n' or 'N'.
 */
 
 import java.util.Scanner;
@@ -13,10 +17,14 @@ public class Problem1
 {
 
 /*
-Action:
-Parameters:
-Returns:
-Precondition:
+Action: Skips all leading whitespaces, checks if first non-whitespace
+        character is numeric. Concatenates found numbers from string
+        into ConvertedInt.
+        Checks if ConvertedInt is <= 65535.
+Parameters: String InputString
+Returns: -1 if first non-whitespace character is non-numeric.
+         -2 if ConvertedInt >= 65535
+Precondition: string contains non-negative numbers.
 */
 
     static int ReadInt (String InputString)
@@ -28,32 +36,21 @@ Precondition:
             if (InputString.charAt(i) != ' ' &&
                (InputString.charAt(i) < '0' || InputString.charAt(i) > '9'))
             {
+                if (ConvertedInt == 0)
+                {
                 return -1;
+                }
+                else if (ConvertedInt <= 65535)
+                {
+                    return ConvertedInt;
+                }
             }
             else if (InputString.charAt(i) != ' ' &&
                     (InputString.charAt(i) >= '0' && InputString.charAt(i) <= '9'))
             {
-                StartAt = i;
-                break;
-            }
-        }       
-
-        for (int i = StartAt; i < InputString.length(); i++)
-        {
-            if (InputString.charAt(i) >= '0' && InputString.charAt(i) <= '9')
-            {
                 ConvertedInt = ConvertedInt * 10 + (InputString.charAt(i) - '0');
             }
-            else if ((InputString.charAt(i) < '0' || InputString.charAt(i) > '9') && 
-                    ConvertedInt <= 65535)
-            {
-                return ConvertedInt;
-            }
-            else
-            {
-                break;
-            }
-        }
+        }       
 
         if (ConvertedInt <= 65535)
         {
@@ -105,4 +102,5 @@ Precondition:
 }
 
 /*
+
  */
