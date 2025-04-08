@@ -3,7 +3,9 @@ Name: Hunter Poole
 Date: 4/8/25
 Lab #: 10
 Source Code: Lab10.java
-Action: 
+Action: Plays a guessing game between user and computer.
+        Both parties will pick a number 1, 2, or 3.
+        Calls a function to check if the numbers are equal and display result.
 */
 
 import java.util.Scanner;
@@ -12,10 +14,10 @@ public class Lab10
 {
 
 /*
-Action:
+Action: Determines if user guess matches the computers choice of number.
 Parameters: int X, int Y
-Returns: void (though it does print)
-Precondition:
+Returns: Prints if user guess was the same or NOT the same as computer's number.
+Precondition: none
 */
     static void CompareNumbers (int X, int Y)
     {
@@ -53,3 +55,47 @@ Precondition:
         }
     }
 }
+/*
+Start the game? Y/N --> Y
+
+Pick a number, 1, 2, or 3 --> 1
+Your number is NOT the same as the computer
+
+Play again? Y/N --> Y
+
+Pick a number, 1, 2, or 3 --> 1
+Your number is NOT the same as the computer
+
+Play again? Y/N --> Y
+
+Pick a number, 1, 2, or 3 --> 1
+Your number is NOT the same as the computer
+
+Play again? Y/N --> Y
+
+Pick a number, 1, 2, or 3 --> 1
+Your number is NOT the same as the computer
+
+Play again? Y/N --> Y
+
+Pick a number, 1, 2, or 3 --> 1
+You picked the same number as the computer
+
+Play again? Y/N --> N
+ */
+
+//Limitation tests:
+
+/*
+Start the game? Y/N --> z
+
+Pick a number, 1, 2, or 3 --> 48
+Your number is NOT the same as the computer
+
+Play again? Y/N --> J
+
+Pick a number, 1, 2, or 3 --> 17
+Your number is NOT the same as the computer
+
+Play again? Y/N --> n
+ */
