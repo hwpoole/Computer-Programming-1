@@ -19,32 +19,35 @@ Returns:
 Precondition:
 */
 
-    static int ReadInt (String X)
+    static int ReadInt (String InputString)
     {
-        int STUFF = 0, BeginAt = 0;
+        int ConvertedInt = 0, StartAt = 0;
 
-        for (int i = 0; i < X.length(); i++)
+        for (int i = 0; i < InputString.length(); i++)
         {
-            if (X.charAt(i) != ' ' && (X.charAt(i) < '0' || X.charAt(i) > '9'))
+            if (InputString.charAt(i) != ' ' &&
+               (InputString.charAt(i) < '0' || InputString.charAt(i) > '9'))
             {
                 return -1;
             }
-            else if (X.charAt(i) != ' ' && (X.charAt(i) >= '0' && X.charAt(i) <= '9'))
+            else if (InputString.charAt(i) != ' ' &&
+                    (InputString.charAt(i) >= '0' && InputString.charAt(i) <= '9'))
             {
-                BeginAt = i;
+                StartAt = i;
                 break;
             }
         }       
 
-        for (int i = BeginAt; i < X.length(); i++)
+        for (int i = StartAt; i < InputString.length(); i++)
         {
-            if (X.charAt(i) >= '0' && X.charAt(i) <= '9')
+            if (InputString.charAt(i) >= '0' && InputString.charAt(i) <= '9')
             {
-                STUFF = STUFF * 10 + (X.charAt(i) - '0');
+                ConvertedInt = ConvertedInt * 10 + (InputString.charAt(i) - '0');
             }
-            else if ((X.charAt(i) < '0' || X.charAt(i) > '9') && STUFF <= 65535)
+            else if ((InputString.charAt(i) < '0' || InputString.charAt(i) > '9') && 
+                    ConvertedInt <= 65535)
             {
-                return STUFF;
+                return ConvertedInt;
             }
             else
             {
@@ -52,9 +55,9 @@ Precondition:
             }
         }
 
-        if (STUFF <= 65535)
+        if (ConvertedInt <= 65535)
         {
-            return STUFF;
+            return ConvertedInt;
         }
         else
         {
@@ -64,7 +67,7 @@ Precondition:
 
     public static void main(String[] args)
     {
-        String ProvidedString;
+        String UserString;
         char Continue;
         int ReturnedInt;
 
@@ -73,9 +76,9 @@ Precondition:
         do 
         {
             System.out.print("Provide your string: ");
-            ProvidedString = Input.nextLine();
+            UserString = Input.nextLine();
 
-            ReturnedInt = ReadInt(ProvidedString);
+            ReturnedInt = ReadInt(UserString);
 
 
             if (ReturnedInt == -1)
