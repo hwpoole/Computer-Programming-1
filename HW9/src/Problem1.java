@@ -25,11 +25,11 @@ Precondition:
 
         for (int i = 0; i < X.length(); i++)
         {
-            if (X.charAt(i) != 32 && (X.charAt(i) < 48 || X.charAt(i) > 57))
+            if (X.charAt(i) != ' ' && (X.charAt(i) < '0' || X.charAt(i) > '9'))
             {
                 return -1;
             }
-            else if (X.charAt(i) != 32 && (X.charAt(i) >= 48 && X.charAt(i) <= 57))
+            else if (X.charAt(i) != ' ' && (X.charAt(i) >= '0' && X.charAt(i) <= '9'))
             {
                 BeginAt = i;
                 break;
@@ -38,18 +38,28 @@ Precondition:
 
         for (int i = BeginAt; i < X.length(); i++)
         {
-            if (X.charAt(i) >= 48 && X.charAt(i) <= 57)
+            if (X.charAt(i) >= '0' && X.charAt(i) <= '9')
             {
-                STUFF = STUFF * 10 + (X.charAt(i) - 48);
+                STUFF = STUFF * 10 + (X.charAt(i) - '0');
             }
-
-            if (X.charAt(i) < 48 || X.charAt(i) > 57)
+            else if ((X.charAt(i) < '0' || X.charAt(i) > '9') && STUFF <= 65535)
             {
                 return STUFF;
             }
+            else
+            {
+                break;
+            }
         }
 
-        return STUFF;
+        if (STUFF <= 65535)
+        {
+            return STUFF;
+        }
+        else
+        {
+            return -2;
+        }
     }
 
     public static void main(String[] args)
@@ -70,11 +80,13 @@ Precondition:
 
             if (ReturnedInt == -1)
             {
-                System.out.println("ERROR -1");
+                System.out.println("ERROR illegal entry. Ensure your first entered"
+                                    + " character is numeric");
             }
             if (ReturnedInt == -2)
             {
-                System.out.println("ERROR -2");
+                System.out.println("ERROR overflow. Your integer must not exceed"
+                                    + " 65535");
             }
 
             System.out.print("Continue? Y or N: ");
