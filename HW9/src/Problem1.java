@@ -24,6 +24,7 @@ Action: Skips all leading whitespaces (reads them but does nothing),
 Parameters: String InputString
 Returns: -1 if first non-whitespace character is non-numeric.
          -2 if ConvertedInt >= 65535
+         ConvertedInt if else
 Precondition: string contains non-negative numbers, starts non-zero.
 */
 
