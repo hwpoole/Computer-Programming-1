@@ -21,27 +21,26 @@ Precondition:
 
     static int ReadInt (String X)
     {
-        String Stack = "";
-        int ChValue, STUFF = 0;
+        int STUFF = 0, BeginAt = 0;
 
         for (int i = 0; i < X.length(); i++)
         {
-                
-            while (X.charAt(i) != 32)
+            if (X.charAt(i) != 32 && (X.charAt(i) < 48 || X.charAt(i) > 57))
             {
-                if (X.charAt(i) < 48 || X.charAt(i) > 57)
-                {
-                    return -1;
-                }
+                return -1;
             }
-        }        
+            else if (X.charAt(i) != 32 && (X.charAt(i) >= 48 && X.charAt(i) <= 57))
+            {
+                BeginAt = i;
+                break;
+            }
+        }       
 
-        for (int i = 0; i < X.length(); i++)
+        for (int i = BeginAt; i < X.length(); i++)
         {
             if (X.charAt(i) >= 48 && X.charAt(i) <= 57)
             {
                 STUFF = STUFF * 10 + (X.charAt(i) - 48);
-                System.out.println(Stack);
             }
 
             if (X.charAt(i) < 48 || X.charAt(i) > 57)
