@@ -86,19 +86,23 @@ Precondition:
                 System.out.println("ERROR illegal entry. Ensure your first entered"
                                     + " character is numeric");
             }
-            if (ReturnedInt == -2)
+            else if (ReturnedInt == -2)
             {
                 System.out.println("ERROR overflow. Your integer must not exceed"
                                     + " 65535");
             }
+            else
+            {
+                System.out.println("Your integer is: " + ReturnedInt);
+            }
 
             System.out.print("Continue? Y or N: ");
             Continue = Input.next().charAt(0);
+            Input.nextLine();
 
         } while (Continue != 'n' && Continue != 'N');
     }
 }
 
 /*
- * 
  */
