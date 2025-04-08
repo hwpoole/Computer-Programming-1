@@ -24,7 +24,7 @@ Action: Skips all leading whitespaces, checks if first non-whitespace
 Parameters: String InputString
 Returns: -1 if first non-whitespace character is non-numeric.
          -2 if ConvertedInt >= 65535
-Precondition: string contains non-negative numbers.
+Precondition: string contains non-negative numbers, starts non-zero.
 */
 
     static int ReadInt (String InputString)
@@ -96,11 +96,36 @@ Precondition: string contains non-negative numbers.
             System.out.print("Continue? Y or N: ");
             Continue = Input.next().charAt(0);
             Input.nextLine();
+            System.out.println();
 
         } while (Continue != 'n' && Continue != 'N');
     }
 }
 
 /*
+Provide your string:           159 J 6
+Your integer is: 159
+Continue? Y or N: Y
 
- */
+Provide your string: !              8
+ERROR illegal entry. Ensure your first entered character is numeric
+Continue? Y or N: Y
+
+Provide your string:  N 48
+ERROR illegal entry. Ensure your first entered character is numeric
+Continue? Y or N: Y
+
+Provide your string: 99999
+ERROR overflow. Your integer must not exceed 65535
+Continue? Y or N: Y
+
+Provide your string:     486      7  <> 18
+Your integer is: 4867
+Continue? Y or N: N
+*/
+
+/*
+Provide your string:  8447JJJ99
+Your integer is: 8447
+Continue? Y or N: n
+*/
