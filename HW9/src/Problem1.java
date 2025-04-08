@@ -17,9 +17,9 @@ public class Problem1
 {
 
 /*
-Action: Skips all leading whitespaces, checks if first non-whitespace
-        character is numeric. Concatenates found numbers from string
-        into ConvertedInt.
+Action: Skips all leading whitespaces (reads them but does nothing), 
+        checks if first non-whitespace character is numeric.
+        Concatenates found numbers from string into ConvertedInt.
         Checks if ConvertedInt is <= 65535.
 Parameters: String InputString
 Returns: -1 if first non-whitespace character is non-numeric.
