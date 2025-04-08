@@ -3,9 +3,10 @@ Name: Hunter Poole
 Date: 4/8/25
 Lab #: 10
 Source Code: Lab10.java
-Action: Plays a guessing game between user and computer.
+Action: Plays a guessing game between user and computer if user agrees to play.
         Both parties will pick a number 1, 2, or 3.
         Calls a function to check if the numbers are equal and display result.
+        Loop until user decides to quit: ('n' or 'N' from user).
 */
 
 import java.util.Scanner;
