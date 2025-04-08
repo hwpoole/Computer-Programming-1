@@ -38,11 +38,11 @@ Precondition: string contains non-negative numbers.
             {
                 if (ConvertedInt == 0)
                 {
-                return -1;
+                    return -1;
                 }
-                else if (ConvertedInt <= 65535)
+                else
                 {
-                    return ConvertedInt;
+                    break;
                 }
             }
             else if (InputString.charAt(i) != ' ' &&
