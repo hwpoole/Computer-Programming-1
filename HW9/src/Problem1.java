@@ -21,15 +21,36 @@ Precondition:
 
     static int ReadInt (String X)
     {
-        String Stack;
+        String Stack = "";
+        int ChValue, STUFF = 0;
 
-        for (int i = 0; i <= X.length(); i++)
+        for (int i = 0; i < X.length(); i++)
         {
-            while (X.charAt(i) >= 48 || X.charAt(i) <= 57)
+                
+            while (X.charAt(i) != 32)
             {
-                Stack = (X.charAt(i));
+                if (X.charAt(i) < 48 || X.charAt(i) > 57)
+                {
+                    return -1;
+                }
+            }
+        }        
+
+        for (int i = 0; i < X.length(); i++)
+        {
+            if (X.charAt(i) >= 48 && X.charAt(i) <= 57)
+            {
+                STUFF = STUFF * 10 + (X.charAt(i) - 48);
+                System.out.println(Stack);
+            }
+
+            if (X.charAt(i) < 48 || X.charAt(i) > 57)
+            {
+                return STUFF;
             }
         }
+
+        return STUFF;
     }
 
     public static void main(String[] args)
@@ -43,16 +64,18 @@ Precondition:
         do 
         {
             System.out.print("Provide your string: ");
-            ProvidedString = Input.next();
+            ProvidedString = Input.nextLine();
+
+            ReturnedInt = ReadInt(ProvidedString);
 
 
             if (ReturnedInt == -1)
             {
-                System.out.print("ERROR -1");
+                System.out.println("ERROR -1");
             }
             if (ReturnedInt == -2)
             {
-                System.out.print("ERROR -2");
+                System.out.println("ERROR -2");
             }
 
             System.out.print("Continue? Y or N: ");
