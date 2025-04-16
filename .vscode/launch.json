@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Problem1",
+            "request": "launch",
+            "mainClass": "Problem1",
+            "projectName": "Computer-Programming-1_714d5404"
+        },
+        {
+            "type": "java",
             "name": "Lab9",
             "request": "launch",
             "mainClass": "Lab9",

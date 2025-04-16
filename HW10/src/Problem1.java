@@ -4,22 +4,23 @@ Date: 4/16/25
 HW #: 10
 Problem #: 1
 Source Code: Problem1.java
-Action:
+Action: Determines the count and percentage of heads or tails given 1000 coin flips.
+        Takes no input. Calls a function "Flip" to flip each coin.
 */
 
 public class Problem1
 {
 
 /*
-Action:
-Parameters:
-Returns:
-Precondition:
+Action: Flips a coin! Uses Math.random() and rounds to 0 or 1 using Math.round().
+Parameters: N/A
+Returns: int 0 for tails or 1 for heads.
+Precondition: N/A
 */
 
     static int Flip()
     {
-        int IsHeads = -1;
+        int IsHeads;
 
        IsHeads = (int)Math.round(Math.random());
 
@@ -45,14 +46,24 @@ Precondition:
             }
         }
 
-        HeadsPercentage = 1000 / HeadsCount;
-        TailsPercentage = 1000 / TailsCount;
+        HeadsPercentage = (HeadsCount / 1000f) * 100f;
+        TailsPercentage = (TailsCount / 1000f) * 100f;
 
-        System.out.printf("%s %d %f %n%s %d %f", "Heads =", HeadsCount, HeadsPercentage,
-                            "Tails =", TailsCount, TailsPercentage);
+        System.out.printf("%s %d %.1f%s %n%s %d %.1f%s", "Heads =", HeadsCount, HeadsPercentage, "%",
+                            "Tails =", TailsCount, TailsPercentage, "%");
     }
 }
 
 /*
- * 
+Heads = 526 52.6% 
+Tails = 474 47.4%
+
+Heads = 497 49.7% 
+Tails = 503 50.3%
+
+Heads = 499 49.9% 
+Tails = 501 50.1%
+
+Heads = 497 49.7% 
+Tails = 503 50.3%
  */
