@@ -13,6 +13,22 @@ import java.util.Scanner;
 public class Problem2
 {
 
+    public static void main(String[] args)
+    {
+        int Base, Exponent, Answer;
+
+        Scanner Input = new Scanner(System.in);
+        System.out.print("Please input the base --> ");
+        Base = Input.nextInt();
+
+        System.out.print("Please input the exponenet --> ");
+        Exponent = Input.nextInt();
+
+        Answer = IntegerPower(Base, Exponent);
+
+        System.out.print("Answer is = " + Answer);
+    }
+    
 /*
 Action: Given two integers, a base and an exponent, finds the result of the exponential math.
 Parameters: int Base, int Exponent
@@ -32,21 +48,6 @@ Precondition: int Exponent is non-zero and non-negative.
         return Result;
     }
 
-    public static void main(String[] args)
-    {
-        int Base, Exponent, Answer;
-
-        Scanner Input = new Scanner(System.in);
-        System.out.print("Please input the base --> ");
-        Base = Input.nextInt();
-
-        System.out.print("Please input the exponenet --> ");
-        Exponent = Input.nextInt();
-
-        Answer = IntegerPower(Base, Exponent);
-
-        System.out.print("Answer is = " + Answer);
-    }
 }
 
 /*

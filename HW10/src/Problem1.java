@@ -11,22 +11,6 @@ Action: Determines the count and percentage of heads or tails given 1000 coin fl
 public class Problem1
 {
 
-/*
-Action: Flips a coin! Uses Math.random() and rounds to 0 or 1 using Math.round().
-Parameters: N/A
-Returns: int 0 for tails or 1 for heads.
-Precondition: N/A
-*/
-
-    static int Flip()
-    {
-        int IsHeads;
-
-       IsHeads = (int)Math.round(Math.random());
-
-        return IsHeads;
-    }
-
     public static void main(String[] args)
     {
         int FlipResult = -1, HeadsCount = 0, TailsCount = 0;
@@ -52,6 +36,23 @@ Precondition: N/A
         System.out.printf("%s %d %.1f%s %n%s %d %.1f%s", "Heads =", HeadsCount, HeadsPercentage, "%",
                             "Tails =", TailsCount, TailsPercentage, "%");
     }
+
+/*
+Action: Flips a coin! Uses Math.random() and rounds to 0 or 1 using Math.round().
+Parameters: N/A
+Returns: int 0 for tails or 1 for heads.
+Precondition: N/A
+*/
+
+    static int Flip()
+    {
+        int IsHeads;
+
+        IsHeads = (int)Math.round(Math.random());
+
+        return IsHeads;
+    }
+
 }
 
 /*
