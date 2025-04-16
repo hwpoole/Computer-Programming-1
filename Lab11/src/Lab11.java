@@ -3,7 +3,10 @@ Name: Hunter Poole
 Date: 4/16/25
 Lab #: 11
 Source Code: Lab11.java
-Action:
+Action: Takes a string from the user, then returns the number of words
+        and characters in the string. Then returns the string backwards.
+        Calls three functions, one to find each of the three outputs
+        described above.
 */
 
 import java.util.Scanner;
@@ -118,6 +121,7 @@ Your sentence backwards is as follows:
 // Constraints tests //
 
 /*
+Enter some sentence:
 Rather long test case, for the sake of providing tested-output examples at the various edge-cases for this program, as required if an edge cas
 e may exist within the program.
 
