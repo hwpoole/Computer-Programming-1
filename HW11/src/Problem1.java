@@ -32,12 +32,14 @@ public class Problem1
 
         Variance = FindVariance(MainArray, Average);
         System.out.print("The variance is " + Variance);
-        System.out.println();
     }
 
 
+
+    
 /*
-Action: Fills an integer array up to its specified length with random numbers in [0-100]
+Action: Fills an integer array up to its specified length with
+        random numbers in [0-100]
 Parameters: int Array[]
 Returns: void
 Precondition: Array is initialized / Array is of size > 0
