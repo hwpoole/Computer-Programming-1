@@ -11,7 +11,17 @@ public class Problem1
 {
     public static void main(String[] args)
     {
+        int Average;
+        float Variance;
+        int[] MainArray = FillTheArray();
 
+        System.out.println("Array is as follows");
+        for (int i = 0; i < 5; i++)
+        {
+        System.out.print(MainArray[i] + " ");
+        }
+
+        Average = FindAverage(MainArray);
     }
 
 
@@ -22,9 +32,14 @@ Returns:
 Precondition:
 */
 
-    static void FillArray ()
+    static int[] FillTheArray ()
     {
-
+        int[] FullArray = new int [5];
+        for (int i = 0; i < 5; i++)
+        {
+            FullArray[i] = (int)Math.round(Math.random() * 101);
+        }            
+        return FullArray;
     }
 
 
@@ -47,7 +62,7 @@ Returns:
 Precondition:
 */
 
-    static void FindVariance ()
+    static void FindVariance (int Array[])
     {
 
     }
