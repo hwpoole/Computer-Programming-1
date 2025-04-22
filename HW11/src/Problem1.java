@@ -13,7 +13,9 @@ public class Problem1
     {
         int Average;
         float Variance;
-        int[] MainArray = FillTheArray();
+        int[] MainArray = new int[5];
+
+        FillTheArray(MainArray);
 
         System.out.println("Array is as follows");
         for (int i = 0; i < 5; i++)
@@ -22,6 +24,11 @@ public class Problem1
         }
 
         Average = FindAverage(MainArray);
+        System.out.printf("%n%n%s %d%n","Average of all numbers is", Average);
+
+        Variance = FindVariance(MainArray, Average);
+        System.out.print("The variance is " + Variance);
+        System.out.println();
     }
 
 
@@ -32,27 +39,32 @@ Returns:
 Precondition:
 */
 
-    static int[] FillTheArray ()
+    static void FillTheArray (int Array[])
     {
-        int[] FullArray = new int [5];
+        for (int i = 0; i < Array.length; i++)
+        {
+            Array[i] = (int)Math.round(Math.random() * 101);
+        }
+    }
+
+
+/*
+Action:
+Parameters:
+Returns:
+Precondition:
+*/
+
+    static int FindAverage (int Array[])
+    {
+        int FoundAverage, ArraySum = 0;
         for (int i = 0; i < 5; i++)
         {
-            FullArray[i] = (int)Math.round(Math.random() * 101);
-        }            
-        return FullArray;
-    }
+            ArraySum += Array[i];
+        }
 
-
-/*
-Action:
-Parameters:
-Returns:
-Precondition:
-*/
-
-    static void FindAverage ()
-    {
-
+        FoundAverage = ArraySum / Array.length;
+        return FoundAverage;
     }
 
 /*
@@ -62,13 +74,48 @@ Returns:
 Precondition:
 */
 
-    static void FindVariance (int Array[])
+    static float FindVariance (int Array[], int Average)
     {
+        float FoundValues = 0, FoundVariance;
+        for (int i = 0; i < Array.length; i++)
+        {
+            FoundValues += (float)Math.pow((Array[i] - Average), 2);
+        }
 
+        FoundVariance = FoundValues / Array.length;
+        return FoundVariance;
     }
 
 }
 
 /*
+Array is as follows
+45 87 70 83 95 
 
+Average of all numbers is 76
+The variance is 305.6
+
+
+
+Array is as follows
+16 99 23 7 58 
+
+Average of all numbers is 40
+The variance is 1151.8
+
+
+
+Array is as follows
+44 92 5 70 27 
+
+Average of all numbers is 47
+The variance is 945.4
+
+
+
+Array is as follows
+19 49 28 44 87 
+
+Average of all numbers is 45
+The variance is 549.2
 */

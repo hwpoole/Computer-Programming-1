@@ -9,6 +9,13 @@
             "name": "Problem1",
             "request": "launch",
             "mainClass": "Problem1",
+            "projectName": "Computer-Programming-1_4307bbc4"
+        },
+        {
+            "type": "java",
+            "name": "Problem1",
+            "request": "launch",
+            "mainClass": "Problem1",
             "projectName": "Computer-Programming-1_714d5404"
         },
         {
