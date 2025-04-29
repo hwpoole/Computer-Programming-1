@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HW12",
+            "request": "launch",
+            "mainClass": "HW12",
+            "projectName": "Computer-Programming-1_714d5404"
+        },
+        {
+            "type": "java",
             "name": "Lab12",
             "request": "launch",
             "mainClass": "Lab12",

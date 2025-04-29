@@ -18,29 +18,56 @@ public class HW12
     {
         char Choice = 'n';
         String UserString;
-        int[] LargeInt = new int[20];
+        int[] LargeIntOne = new int[20];
+        int[] LargeIntTwo = new int[20];
+        int[] SumOfLargeInts = new int[20];
 
         do
         {
-            ClearArray(LargeInt);
+            ClearArray(LargeIntOne);
+            ClearArray(LargeIntTwo);
 
             Scanner Input = new Scanner(System.in);
-            System.out.print("Please enter large number --> ");
+            System.out.print("Please enter first number --> ");
             UserString = Input.nextLine();
 
-            StringToIntArray(LargeInt, UserString);
+            StringToIntArray(LargeIntOne, UserString);
 
-            System.out.println("Large 20 digit Number is");
-            for (int i = 0; i < LargeInt.length; i++)
-            {
-                System.out.print(LargeInt[i]);
-            }
+            System.out.print("Please enter second number --> ");
+            UserString = Input.nextLine();
+
+            StringToIntArray(LargeIntTwo, UserString);
+
+            DisplayAnArray(LargeIntOne);
+            DisplayAnArray(LargeIntTwo);
+
+            AddTwoArrays(LargeIntOne, LargeIntTwo, SumOfLargeInts);
+
+            System.out.println("------------------------------");
+            DisplayAnArray(LargeIntOne);
 
             System.out.printf("%n%n%s","Continue 'Y' or 'N', response --> ");
             Choice = Character.toLowerCase(Input.next().charAt(0));
 
         } while (Choice != 'n');
     }
+
+
+/*
+Action: Clears an integer array (Sets all values to 0)
+Parameters: int Array[]
+Returns: void
+Precondition: Array is of size > 0.
+*/
+
+    static void ClearArray (int Array[])
+    {
+        for (int i = 0; i < Array.length; i++)
+        {
+            Array[i] = 0;
+        }
+    }
+
 
 /*
 Action: Fills an integer array using a provided string of integers.
@@ -68,41 +95,57 @@ Precondition: Array is initialized / Array is of size > 0.
     }
 
 /*
-Action: Clears an array (Sets all values to 0)
-Parameters: int Array[]
+Action: For two integer arrays: Adds the value of each index of the second
+        array to the value of each index of the first array.
+Parameters: int ArrayOne[], int ArrayTwo[]
 Returns: void
-Precondition: Array is of size > 0.
+Precondition: Both arrays are initialized / Arrays are of size > 0.
 */
 
-    static void ClearArray (int Array[])
+    static void AddTwoArrays (int ArrayOne[], int ArrayTwo[], int SumArray[])
+    {
+       // int OneAsInt = 0, TwoAsInt = 0;
+
+        for (int i = 0; i < ArrayOne.length; i++)
+        {
+            ArrayOne[i] += ArrayTwo[i];
+            if (ArrayOne[i] + ArrayTwo[i] > 10)
+            {
+                ArrayOne[i - 1] += 1;
+                ArrayOne[i] = (ArrayOne[i] + ArrayTwo[i]) % 10;
+            }
+        }
+
+    /*    for (int i = 0; i < ArrayTwo.length; i++)
+        {
+            TwoAsInt += ArrayTwo[i];
+        }
+
+        OneAsInt += TwoAsInt;
+
+        for (int i = 0; i < SumArray.length; i++)
+        {
+            SumArray[SumArray.length -
+        } */
+    }
+
+/*
+Action: Displays an integer array all on one line, no spaces or other formatting.
+Parameters: int Array[]
+Returns: void
+Precondition: Array is initialized / Array is of size > 0.
+*/
+
+    static void DisplayAnArray (int Array[])
     {
         for (int i = 0; i < Array.length; i++)
         {
-            Array[i] = 0;
+            System.out.print(Array[i]);
         }
+
+        System.out.println();
     }
-
 }
-
 /*
-Please enter large number --> 984567
-Large 20 digit Number is
-00000000000000984567
 
-Continue 'Y' or 'N', response --> j
-Please enter large number --> ABCD
-Large 20 digit Number is
-00000000000000000000
-
-Continue 'Y' or 'N', response --> MAYBE????
-Please enter large number --> 12345678909876543210
-Large 20 digit Number is
-12345678909876543210
-
-Continue 'Y' or 'N', response --> <804>  
-Please enter large number --> AB<3264>     L17
-Large 20 digit Number is
-00000003264000000017
-
-Continue 'Y' or 'N', response --> NO!
 */
